@@ -4,8 +4,14 @@
 cordova plugin add https://github.com/shankar-mahesh/cordova-plugin-firebase-appindexing
 
 ## Usage
+##1 . IMPORTANT Ensure you have deeplinking in your application. If not kindly use https://github.com/nordnet/cordova-universal-links-plugin
 
-#IMPORTANT Ensure you have deeplinking in your application. If not kindly use https://github.com/nordnet/cordova-universal-links-plugin
+##2
+	i.   Create a firebase account 
+	ii.  Add your android app to firebase account
+	iii. Download google-services.json from firebase website and save in your cordova-app base folder
+
+##3 Setup Appindexing
 
 Initialise : 
 ```js
