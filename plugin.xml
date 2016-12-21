@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-firebase-appindexing"
+        version="1"
+        xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <name>Android Google App Indexing Cordova Plugin</name>
+
+    <description>
+      Push History to Google App Indexing for Cordova apps.
+    </description>
+
+    <repo>https://github.com/eneskaya/google-app-indexing-cordova</repo>
+
+    <js-module name="FirebaseAppIndexing" src="www/firebase-app-indexing.js">
+        <clobbers target="AppIndexing" />
+    </js-module>
+
+    <engines>
+        <engine name="cordova-android" version=">=4.0.0" />
+        <engine name="cordova-ios" version=">=3.0.0" />
+    </engines>
+
+    <platform name="android">
+
+      <config-file target="config.xml" parent="/*">
+          <feature name="AppIndexing">
+              <param name="android-package" value="com.learnyst.appindexing.AppIndexing"/>
+          </feature>
+      </config-file>
+      <config-file parent="/resources" target="res/values/strings.xml">
+        <string name="google_app_id">@string/google_app_id</string>
+      </config-file>
+      <config-file parent="/resources" target="res/values/strings.xml">
+        <string name="google_api_key">@string/google_api_key</string>
+      </config-file>
+
+      <framework src="com.google.firebase:firebase-core:10.0.1" />
+      <framework src="com.google.firebase:firebase-appindexing:10.0.1" />
+
+      <source-file src="src/android/AppIndexing.java" target-dir="src/com/learnyst/appindexing" />
+
+    </platform>
+    <hook src="scripts/after_prepare.js" type="after_prepare" />
+
+
+</plugin>
