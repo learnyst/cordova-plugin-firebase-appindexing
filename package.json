@@ -1,0 +1,35 @@
+{
+  "name": "cordova-plugin-firebase-appindexing",
+  "version": "1.0.0",
+  "description": "\n      Push History to Google App Indexing for Cordova apps.\n    ",
+  "cordova": {
+    "id": "cordova-plugin-firebase-appindexing",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shankar-mahesh/cordova-plugin-firebase-appindexing.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "engines": [
+    {
+      "name": "cordova-android",
+      "version": ">=4.0.0"
+    },
+    {
+      "name": "cordova-ios",
+      "version": ">=3.0.0"
+    }
+  ],
+  "author": "Prasanna Learnyst",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shankar-mahesh/cordova-plugin-firebase-appindexing/issues"
+  },
+  "homepage": "https://github.com/shankar-mahesh/cordova-plugin-firebase-appindexing#readme"
+}
