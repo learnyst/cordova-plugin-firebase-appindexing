@@ -31,4 +31,8 @@ AppIndexing.endView(function success(success){ /* success code */ }, function fa
 do not give full URL only path
 
 
-# If cordova-plugin-firebase installed. Kindly comment <hook src="scripts/after_prepare.js" type="after_prepare" /> from plugin.xml file 
+## If cordova-plugin-firebase installed. Kindly comment <hook src="scripts/after_prepare.js" type="after_prepare" /> from plugin.xml file 
+
+```xml
+<hook src="scripts/after_prepare.js" type="after_prepare" />
+```
