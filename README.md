@@ -1,7 +1,7 @@
 # cordova-plugin-firebase-appindexing
 
 ## Installation
-cordova plugin add https://github.com/shankar-mahesh/cordova-plugin-firebase-appindexing
+cordova plugin add cordova-plugin-firebase-appindexing
 
 ## Usage
 ##1 . IMPORTANT Ensure you have deeplinking in your application. If not kindly use https://github.com/nordnet/cordova-universal-links-plugin
